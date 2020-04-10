@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Developed and Maintained by
           {` `}
-          <a href="https://www.neyatechdevelopers.com/" target='_blank' rel="noopener noreferrer">Neyatech Developers</a>
+          <a href="https://www.neyatechdevelopers.com/" target='_blank' rel="noopener noreferrer">{data.site.siteMetadata.author}</a>
         </footer>
     </>
   )

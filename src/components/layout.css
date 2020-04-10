@@ -31,7 +31,7 @@ header .logo{
 }
 header .logo h1 a{
   color: #fafaf6;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 600;
 }
 nav{
@@ -51,7 +51,7 @@ nav ul li {
 nav ul li a {
   font-weight: 400;
   font-size: 14px;
-  color: #ececec;
+  color: #d1d1d1;
   text-decoration: none;
 }
 .active-nav{
