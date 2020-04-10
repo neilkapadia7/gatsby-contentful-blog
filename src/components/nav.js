@@ -5,10 +5,10 @@ const Nav = () => {
     return (
         <nav>
             <ul style={{display: 'flex', listStyle: 'none'}}>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/blog'>Blog</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li><Link to='/' activeClassName='active-nav'>Home</Link></li>
+                <li><Link to='/about' activeClassName='active-nav'>About</Link></li>
+                <li><Link to='/blog' activeClassName='active-nav'>Blog</Link></li>
+                <li><Link to='/contact' activeClassName='active-nav'>Contact</Link></li>
             </ul>
         </nav>
     )

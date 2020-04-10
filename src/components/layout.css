@@ -51,9 +51,22 @@ nav ul li {
 nav ul li a {
   font-weight: 400;
   font-size: 14px;
-  color: #fafaf6;
+  color: #ececec;
   text-decoration: none;
+}
+.active-nav{
+  color: #ffffff;
+  font-weight: 500;
 }
 .App{
   margin-top: 120px;
+  width: 75%;
+  margin: 120px 12.5% 60px 12.5%;
+}
+
+
+
+/* Footer */
+footer{
+  text-align: center;
 }
