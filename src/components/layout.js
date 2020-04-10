@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import Nav from './nav';
 
 import Header from "./header";
 import "./layout.css";
@@ -20,7 +19,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Nav />
       <div
         style={{
           margin: `0 auto`,
@@ -28,11 +26,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main className='App'>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, Developed and Maintained by
           {` `}
-          <a href="https://www.gatsbyjs.org">Neyatech Developers</a>
+          <a href="https://www.neyatechdevelopers.com/">Neyatech Developers</a>
         </footer>
       </div>
     </>

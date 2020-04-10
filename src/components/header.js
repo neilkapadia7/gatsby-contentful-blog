@@ -1,21 +1,16 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+import Nav from './nav';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#0e153a`,
+      background: `#3d5af1`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `10px 20px`,
-      }}
-    >
+    <div className='logo'>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -28,6 +23,9 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    
+    <Nav />
+
   </header>
 )
 
