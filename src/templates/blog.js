@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 
 export const query = graphql`
@@ -18,8 +18,10 @@ export const query = graphql`
 const Blog = (props) => {
     return(
         <Layout>
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-           This is the blog template 
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1> 
+            <p>{props.data.markdownRemark.frontmatter.date}</p>
+            <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+            <Link to='/blog'>Back</Link>
         </Layout>
     )
 }
