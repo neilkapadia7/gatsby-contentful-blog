@@ -9,7 +9,8 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: 'qn8n68lis8yf',
-        accessToken: 'lhokY3iJMcGEznTnNSl5B6SL4QIZoVIT7mmXIt_Ww40'
+        accessToken: 'lhokY3iJMcGEznTnNSl5B6SL4QIZoVIT7mmXIt_Ww40',
+        forceFullSync: true
       }
     },
     `gatsby-plugin-react-helmet`,
