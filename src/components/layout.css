@@ -84,8 +84,11 @@ nav ul li a {
   margin: 25px 0;
   padding: 15px 30px;
   background-color: rgb(248, 249, 255);
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 0 20px #ccc;
+}
+.blog-container:hover{
+  background-color: rgb(240, 240, 240);
 }
 .blog-container h2{
   font-family: 'Roboto', sans-serif;

@@ -5,6 +5,13 @@ module.exports = {
     author: `Neil Kapadia`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'qn8n68lis8yf',
+        accessToken: 'lhokY3iJMcGEznTnNSl5B6SL4QIZoVIT7mmXIt_Ww40'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
