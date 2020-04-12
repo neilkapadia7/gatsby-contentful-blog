@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Layout from '../components/layout';
 import {graphql, useStaticQuery, Link} from 'gatsby';
 
@@ -26,15 +26,15 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <div>
+            <div className='blog-page'>
                 <h1>Blog Page</h1>
-                <div>
+                <div className='blog-main-div'>
                     {data.allMarkdownRemark.edges.map(blog => 
-                        <Fragment>
+                        <div className='blog-container'>
                             <h2>{blog.node.frontmatter.title}</h2>
                             <p>{blog.node.frontmatter.date}</p>
                             <Link to={`blog/${blog.node.fields.slug}`}>Read More</Link>
-                        </Fragment>
+                        </div>
                     )}
                 </div>
             </div>

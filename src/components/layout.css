@@ -13,6 +13,12 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: left;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
 header{
   width: 100%;
   display: table;
@@ -65,9 +71,55 @@ nav ul li a {
   margin: 120px 12.5% 60px 12.5%;
 }
 
+/* Blogs */
+.blog-page h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.blog-main-div{
+  margin-top: 40px;
+}
+.blog-container{
+  margin: 25px 0;
+  padding: 15px 30px;
+  background-color: rgb(248, 249, 255);
+  border-radius: 2px;
+  box-shadow: 0 0 20px #ccc;
+}
+.blog-container h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  line-height: 40px;
+}
+.blog-container p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  font-style: italic;
+  margin: 0;
+  line-height: 30px;
+}
+.blog-container a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 10px 0;
+  line-height: 45px;
+  color: #f9feff;
+  padding: 8px 15px;
+  background-color: #0e153a;
+  border-radius: 5px;
+}
+.gatsby-resp-image-wrapper {
+  margin: 0!important;
+}
 
 
 /* Footer */
 footer{
   text-align: center;
+  margin: 50px auto;
 }
