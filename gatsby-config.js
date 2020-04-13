@@ -16,9 +16,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`,`/about/`, `/blog/`, `/contact/` `/projects/*`],
+        precachePages: [`/`,`/about/`, `/blog/`, `/contact/`, `/404`],
       },
-    }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
