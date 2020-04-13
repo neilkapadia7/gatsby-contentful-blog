@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import {graphql, useStaticQuery, Link} from 'gatsby';
+import SEO from '../components/seo';
 
 const BlogPage = () => {
 
@@ -25,6 +26,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
+          <SEO title='Blog' />
             <div className='blog-page'>
                 <h1>Blog Page</h1>
                 <div className='blog-main-div'>

@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import { graphql, Link } from 'gatsby';
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
+import SEO from '../components/seo';
 
 
 // export const query = graphql`
@@ -44,6 +45,7 @@ const Blog = props => {
 
     return(
         <Layout>
+            <SEO title={props.data.contentfulBlogPost.title} />
             <h1>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
