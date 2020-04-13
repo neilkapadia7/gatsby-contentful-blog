@@ -13,12 +13,6 @@ module.exports = {
         forceFullSync: true
       }
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`,`/about/`, `/blog/`, `/contact/`, `/404`],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -56,6 +50,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Exim Air Care`,
+        short_name: `Exim Air Care`,
+        start_url: `/`,
+        background_color: `#3d5af1`,
+        theme_color: `#3d5af1`,
+        display: `standalone`,
+      },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`,`/about/`, `/blog/`, `/contact/`, `/404`],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
