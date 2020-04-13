@@ -13,6 +13,12 @@ module.exports = {
         forceFullSync: true
       }
     },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`,`/about/`, `/blog/`, `/contact/` `/projects/*`],
+      },
+    }
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
