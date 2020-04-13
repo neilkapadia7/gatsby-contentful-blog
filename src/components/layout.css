@@ -119,7 +119,10 @@ nav ul li a {
 .gatsby-resp-image-wrapper {
   margin: 0!important;
 }
-
+.blog-image{
+  height: auto;
+  width: 90%;
+}
 
 /* Footer */
 footer{
